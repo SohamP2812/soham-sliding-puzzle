@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Squares from "./components/squares.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Soham's Sliding Puzzle</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Click the number on your keyboard of the corresponding value of the
+          square you want to move
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="parent">
+          <Squares></Squares>
+        </div>
       </header>
     </div>
   );
